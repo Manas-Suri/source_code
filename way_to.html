@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .header5{font-size: 30px ;font-family: Arial, Helvetica, sans-serif;text-align: center; padding-top:1rem ;}
+        fieldset{border-color: black;border: 2px solid; padding: 1 rem;}
+        legend{font-size: large;font-family:Arial, Helvetica, sans-serif;font-weight: bold; margin-bottom: 1rem;}
+        label{text-align: center;font-family: Arial, Helvetica, sans-serif;font-weight: bold;margin-bottom:2rem;font-size: large;}
+        body{background-color: rgb(186, 235, 186);;}
+        .way{margin-top: 1rem;margin-bottom: 3rem; display: block;text-align:left;height:100%;width: 100%;}
+        .btn4{padding-left: 4rem;}
+button{font-size: large;font-family: Arial, Helvetica, sans-serif;width: 100px;height: 40px; background-color:tomato;margin-bottom: 2rem;margin-top: 1 rem;}
+.category{background-color: skyblue; font-style: oblique;font-family: Arial, Helvetica, sans-serif;font-weight: bold; vertical-align: middle;}
+input,select{display:inline-block;
+vertical-align:middle;height: 40px;width: 100%;margin-top: 20px;}
+</style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="header5">Find your way here</h1>  
+    <form action="final.html" method="get">
+    <fieldset>
+        <legend>Please select options to find your way</legend>
+         <div class="way">
+                          <label for="building">Select Building</label>
+                          <select name="building" id="building" class="category">
+                              <option value="Building 1">Building 1</option>
+                              <option value="Building 2">Building 2</option>
+                              <option value="Building 3">Building 3</option>
+                          </select>
+                      </div>
+                      <div class="way">
+                          <label for="department">Choose Department</label>
+                          <select name="purpose" id="purpose" class="category" required>
+                              <option value="Cardiology">Cardiology</option>
+                              <option value="Dermatology">Dermatology</option>
+                              <option value="Orthopedics">Orthopedics</option>
+                              <option value="Neurology">Neurology</option>
+                              <option value="Gynaecology">Gynaecology</option>
+                              <option value="Genral Surgery">General Surgery</option>
+                              <option value="Physiotherapy">Physiotherapy</option>
+                              
+                          </select>
+                      </div>
+                      <div class="way">
+                          <label for="floor">Floor</label>
+                          <select name="floor" id="floor"class="category">
+                              <option value="floor 1">floor 1</option>
+                              <option value="floor 2">floor 2</option>
+                              <option value="floor 3">floor 3</option>
+                          </select>
+                      </div>
+                      <div class="btn4">
+                          <button type="submit">Submit</button>
+                          <button type="reset">Reset</button>
+                       </div> 
+    </fieldset>
+  </form>
+  </body>
+<script type="C:\Users\Manas\OneDrive\Desktop\Untitled-1.js"></script>
+<script type="text/javascript" src="C:\Users\Manas\eclipse-workspace\Cordova_directory\Counr\www\js\index.js"></script>
+</body>
+</html>

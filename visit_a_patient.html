@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body{background-color: rgb(186, 235, 186);;}
+    fieldset{border-color: black;border: 2px solid; padding: 1 rem;}
+      legend{font-size: 15px ; font-family: Arial, Helvetica, sans-serif;font-style: italic;text-align:left;margin-bottom:1rem;}
+      .header5{font-size: 22px ;font-family: Arial, Helvetica, sans-serif;text-align: center;}
+      .btn3{padding-left: 4rem;}
+      button{font-size: large;font-family: Arial, Helvetica, sans-serif;width: 100px;height: 60px; background-color:tomato;margin-bottom: 3rem;margin-top: 3rem;}
+        label{text-align: center;font-family: Arial, Helvetica, sans-serif;font-weight: bold;margin-bottom:2rem;}
+        input{width: 100%;border-color: black;padding-bottom: 0.5rem;height: 20px auto;margin-bottom: 1rem ;margin-top: 1rem;background-color: skyblue;}  
+        textarea{border-color: black;width:100%;height: 5cm;margin-bottom: 1rem;}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h1 class="header5">Visiting a patient</h1>
+        <form action="final.html" method="get">
+            <fieldset>
+                <legend>
+                    Please enter the details
+                </legend>
+                <div>
+                    <label for="patient_name">Patient's Name</label>
+                    <input type="text" name="patient_name" id="patient_name"required>
+                </div>
+                
+                <div>
+                    <label for="relation">Relation with Patient </label>
+                    <input type="text" name="relation" id="relation"required>
+                </div>
+                <div>
+                    <label for="description"> </label>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Patient's Description(optional)"></textarea>
+                </div>
+            <div class="btn3">
+                <a href="final.html" >
+                    <button onclick="app.value3()" >Submit</button>
+                </a>
+                <button type="reset">Reset</button>
+             </div> 
+
+             <!-- <label id="qrcode"></label>
+
+                <!-- (C) CREATE QR CODE ON PAGE LOAD -->
+
+            <!-- <div id="qr_code"></div> -->
+        </fieldset>
+    </form>
+
+    <script type="text/javascript" src="C:\Users\Manas\eclipse-workspace\Cordova_directory\Counr\www\js\index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</body>
+</html>

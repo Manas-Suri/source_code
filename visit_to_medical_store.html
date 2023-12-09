@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{background-color: rgb(186, 235, 186);;}
+        fieldset{border-color: black;border: 2px solid; padding: 1 rem;}
+        legend{font-size: 15px ; font-family: Arial, Helvetica, sans-serif;font-style: italic;text-align:left;margin-bottom: 0.5rem;}
+        .btn5{padding-left: 4rem;}
+        button{font-size: large;font-family: Arial, Helvetica, sans-serif;width: 100px;height: 40px; background-color:tomato;margin-bottom: 1rem;margin-top: 1rem;}
+        label{text-align: center;font-family: Arial, Helvetica, sans-serif;font-weight: bold;margin-bottom:2rem;}
+        input{width: 100%;border-color: black;padding-bottom: 0.5rem;height: 20px auto;margin-bottom: 1rem ;margin-top: 1rem;background-color: skyblue;}
+        textarea{border-color: black;width:100%;height: 5cm;margin-bottom: 1rem;}
+        .upload2{background-color: rgb(186, 235, 186) ;}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="header6" >Place Order in a medical store</h1>
+    <form action="final.html" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Please upload the prescription</legend>
+            <div>
+                <label for="order">Name of Person ordering </label>
+                <input type="text" id="order" name="order">
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date"required>
+                </div>
+                <div>
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time"required>
+                </div>
+                <div>
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" type="number" name="mobile"  id="mobile"maxlength=14 placeholder="Please add +49 or 0 before">
+                </div>
+                <label for="prescription">Upload prescription</label>
+                <input type="file" id="prescription" name="prescription" class="upload2">
+            </div>
+            <div>
+                <label for="description"> </label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Special Instruction"></textarea>
+            </div>
+            <div class="btn">
+                <a href="final.html" >
+                    <button onclick="app.value4()" >Submit</button>
+                </a>
+                <button type="reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script type="text/javascript" src="C:\Users\Manas\eclipse-workspace\Cordova_directory\Counr\www\js\index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+</body>
+</html>

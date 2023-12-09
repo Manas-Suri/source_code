@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{background-color: rgb(186, 235, 186);;}
+        fieldset{border-color: black;border: 2px solid; padding: 1 rem;}
+        legend{font-size: 15px ; font-family: Arial, Helvetica, sans-serif;font-style: italic;text-align:left;margin-bottom: 0.5rem;}
+        .header2{font-size: 22px ;font-family: Arial, Helvetica, sans-serif;text-align: center;}
+        .btn{padding-left: 4rem;}
+        button{font-size: large;font-family: Arial, Helvetica, sans-serif;width: 100px;height: 40px; background-color:tomato;}
+          label{text-align: center;font-family: Arial, Helvetica, sans-serif;font-weight: bold;margin-bottom:2rem;}
+          input{width: 100%;border-color: black;padding-bottom: 0.5rem;height: 20px auto;margin-bottom: 1rem ;margin-top: 1rem;background-color: skyblue;}
+          .checks{display: flex;}
+          .checks1{flex: 1 0 auto;display: flex;flex-direction:column;align-items: center;margin-top: 1rem;}
+          .gender1{margin-bottom: 1rem;font-family: Arial, Helvetica, sans-serif;font-weight: bold;}
+          textarea{border-color: black;width:100%;height: 5cm;margin-bottom: 1rem;}
+          .upload{background-color: rgb(186, 235, 186) ;}
+          .contact{font-size:small;display: flex;flex-direction:column;text-align: center;font-style: oblique;font-weight: bold;}
+   </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <html lang="en">
+    <body>
+        <h2 class="header2">Public Hospital Registration Form</h2>
+        <form action="purpose.html"method="GET" enctype="multipart/form-data" class="visiting_form">
+            <fieldset>
+                <legend>PLEASE ENTER YOUR DETAILS</legend>
+                <div >
+                    <label for="firstname" >First Name</label>
+                    <input type="text" name="firstname" id="firstname"required> 
+                    <br>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
+                <div >
+                    <label for="Age">Age</label>
+                    <input type="number" name="Age" id="Age"required min="1" max="200" maxlength="3">
+                </div>
+                <div class="gender1">
+                    Gender
+                </div>
+                <div class="checks">
+                    <input type="radio" name="gender" id="male" value="Male">
+                    <label class="checks1" for="male">Male</label>
+                    <input type="radio" name="gender" id="female"value="Female" >
+                    <label class="checks1"  for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label class="checks1"  for="other">Rather not specify</label>
+                </div>
+                    <div>
+                        <label for="email">Email Id</label>
+                        <input type="email" name="email" id="email"placeholder="example@email.com"required>
+                    </div>
+                    <div>
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" type="number" name="mobile"  id="mobile"maxlength=14 placeholder="Please add +49 or 0 before">
+                    </div>
+                    <!-- <div>
+                        <label for="purpose">Purpose Of Visit</label>
+                        <select name="purpose" id="purpose">
+                            <option value="Visiting a patient">Visiting a Patient</option>
+                            <option value="Visiting a Doctor">Visting a Doctor</option>
+                            <option value="Visit a Medical Store">Visit a Medical Store</option>
+                            <option value="Visit Biling Counter">Visit Biling Counter</option>
+                            <option value="Way to Reception">Way to Reception</option>
+                            <option value="Way to Cafeteria">Way to Cafeteria</option>
+                            <option value="Way to WC (Toilet)">Way to WC (Toilet)</option>
+                            
+                        </select>
+                    </div> -->
+                    <div>
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date"required>
+                    </div>
+                    <div>
+                        <label for="time">Time</label>
+                        <input type="time" name="time" id="time"required>
+                    </div>
+                    <div>
+                        <label for="description"></label>
+                        <textarea name="description" id="description" cols="30" rows="10" placeholder="Description(optional)"></textarea>
+                    </div>
+                    <div>
+                        <label for="file"> Upload Document(optional) </label>
+                        <input class="upload" type="file" id="file" name="file" style="align-items: center;">
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                     </div> 
+                     <br>
+                     <div class="contact" >
+                        <h4>Helpline number :- 1234567890</h4>
+                         Email:-<a href="mailto:xyz@gmail.com" >xyz@gmail.com</a>
+                         website:- <a href="http://xyz.com" >"http://xyz.com"</a>
+                         Phone no.:- <a href="tel:+49123456789" >+49123456789</a>
+                    </div>
+                </fieldset>
+            <!-- <script type="C:\Users\Manas\OneDrive\Desktop\Untitled-1.js"></script> -->
+            <script type="text/javascript" src="visiting_appointment.js"></script>
+            <!-- <script type="text/javascript" src="js\index.js"></script> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+            <script src="cordova.js"></script>
+    </body>
+</html>

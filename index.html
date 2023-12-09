@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <head>
+        <style>.home{background-color: skyblue;; font-size:large; font-family: Arial, Helvetica, sans-serif; font-weight:bold ;auto;border-color: black;
+            width:100%;height:25mm  ;text-align:center;margin-bottom:8mm;border-radius: 10px;}
+            legend{font-size: large; font-family: Arial, Helvetica, sans-serif;font-style: italic;}
+            .header{font-size: xx-large;font-family: Arial, Helvetica, sans-serif;text-align: center}
+            body{background-color: rgb(186, 235, 186);}
+            /* Above code for main page all buttons */
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <title>Hello World</title>
+    </head>
+    <body>
+      <h1>Public Hospital</h1>  
+      <fieldset>
+          <legend>Please select one option</legend>
+          <div class ="home1">
+            <a href="visiting_appointment.html" id="home" name="home" class="home">
+              <button style="margin-top: 5mm;" class="home">Request an appointment and visiting Pass</button> 
+            </a>
+          </div>
+          <div class="home1">
+            <a href="hospital_map.png" download="hospital_map.png" id="home" name="home" class="home">
+              <button style="margin-top: 5mm;" class="home">download map</button>
+            </a>
+          </div>
+          <div class="home1">
+            <a href="visit_to_medical_store.html" id="home" name="home" class="home">
+              <button style="margin-top: 5mm;" class="home">Order to Medical Store</button>
+            </a>
+          </div>
+          <div class = "home1">
+          <a href="tel:+49123456789"  id="home" name="home">
+          <button style="margin-top: 5mm;" class="home" id = "hallos">call emergency number</button>
+          </a>
+          </div>
+        </fieldset>
+    
+      <!-- <script type="C:\Users\Manas\OneDrive\Desktop\Untitled-1.js"></script> -->
+      <script type="text/javascript" src="js\index.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+      <script src="cordova.js"></script>
+    </body>
+</html>

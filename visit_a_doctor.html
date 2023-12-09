@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{background-color: rgb(186, 235, 186);;}
+        input{width: 100%;border-color: black;padding-bottom: 0.5rem;height: 20px auto;margin-bottom: 2rem ;margin-top: 1rem;background-color: skyblue;}
+        label{text-align: center;font-family: Arial, Helvetica, sans-serif;font-weight: bold;margin-bottom:2rem;}
+       legend{font-size: large;font-family:Arial, Helvetica, sans-serif;font-weight: bold; margin-bottom: 1rem;}
+       fieldset{border-color: black;border: 2px solid; padding: 1 rem;}
+       .header4{font-size: 22px ;font-family: Arial, Helvetica, sans-serif;text-align: center;margin-top: 0.5rem;}
+       .btn2{padding-left: 4rem;}
+       button{font-size: large;font-family: Arial, Helvetica, sans-serif;width: 100px;height: 40px; background-color:tomato;margin-bottom: 1rem;margin-top: 1rem;}
+       textarea{border-color: black;width:100%;height: 5cm;margin-bottom: 1rem;}
+       .urgent{margin-top: 1.5rem;font-family: Arial, Helvetica, sans-serif;font-weight: bold;margin-bottom: 1rem;}
+       .urgent1{display: flex;}
+       .ok{flex: 1 0 auto;display: flex;flex-direction:column;padding-right: 8rem;text-align: center;}
+       .department{background-color: skyblue;border-color: black;font-family: Arial, Helvetica, sans-serif;font-weight: bold;}
+       </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 class="header4">Visiting a Doctor</h1>
+        <form action="final.html" method="get">
+            <Fieldset>
+                <legend>Please enter the details</legend>
+                <div>
+                    <label for="doc_name">Doctor's Full Name</label>
+                    <input type="text" name="doc_name" id="doc_name">
+                </div>
+                <div>
+                    <label for="department">Choose Department</label>
+                    <select class="department"  name="purpose" id="purpose"required>
+                        <option class="department" value="Cardiology">Cardiology</option>
+                        <option class="department"value="Dermatology">Dermatology</option>
+                        <option class="department" value="Orthopedics">Orthopedics</option>
+                        <option class="department" value="Neurology">Neurology</option>
+                        <option class="department" value="Gynaecology">Gynaecology</option>
+                        <option class="department" value="Genral Surgery">General Surgery</option>
+                        <option class="department" value="Physiotherapy">Physiotherapy</option>
+                        
+                    </select>
+                </div>
+                <div class="urgent">
+                Urgent
+            </div>
+                <div class="urgent1">
+                    <input type="radio" name="urgent" id="yes" value="yes">
+                    <label class="ok" for="yes">Yes</label>
+                    <input type="radio" name="urgent" id="No" value="no">
+                    <label  class="ok" for="No">No</label>
+                </div>
+                <div>
+                    <label for="description"> </label>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Description(optional)"></textarea>
+                </div>
+                <div class="btn2">
+                    <button  type="submit">Submit</button>
+                    <button  type="reset">Reset</button>
+                 </div> 
+            </Fieldset>
+        </form>
+    <script type="text/javascript" src="visit_a_doctor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
